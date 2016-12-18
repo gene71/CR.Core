@@ -10,3 +10,13 @@ c:\users\mooreel\documents\visual studio 2015\Projects\CRScan\CRScan\obj\Debug\C
 c:\users\mooreel\documents\visual studio 2015\Projects\CRScan\CRScan\obj\Debug\CRScan.exe
 c:\users\mooreel\documents\visual studio 2015\Projects\CRScan\CRScan\obj\Debug\CRScan.pdb
 c:\users\mooreel\documents\visual studio 2015\Projects\CRScan\CRScan\obj\Debug\CRScan.csprojResolveAssemblyReference.cache
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\bin\Debug\CRScan.exe.config
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\obj\Debug\CRScan.exe
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\obj\Debug\CRScan.pdb
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\bin\Debug\CRScan.exe
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\bin\Debug\CRScan.pdb
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\obj\Debug\CRScan.Form1.resources
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\obj\Debug\CRScan.Properties.Resources.resources
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\obj\Debug\CRScan.csproj.GenerateResource.Cache
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\bin\Debug\CRScan.exe.CodeAnalysisLog.xml
+C:\Users\mooreel\Source\Repos\lmcr\lmcr\CRScan\CRScan\bin\Debug\CRScan.exe.lastcodeanalysissucceeded
