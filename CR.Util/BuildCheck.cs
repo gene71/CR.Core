@@ -1,11 +1,6 @@
-﻿using CodeRecon.Core.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-//test//test//test//test//test
+
 
 namespace CR.Util
 {
@@ -38,10 +33,12 @@ namespace CR.Util
             try
             {
                 //first check can i enumerate all files
-                files = GetFiles(path);
+                FileUtil fu = new FileUtil();
+                files = fu.GetFiles(path);
 
-                //can i get extensions
-                GetFileExtensions(path);
+
+                //can i get extensions using FileInfo
+                fileExtensions = fu.GetFileExtensions(path);
 
                 //can I hash them
                
@@ -50,6 +47,7 @@ namespace CR.Util
                     hashes.Add(this.GetMD5Hash(p));
                 }
 
+                //if errors 
                 if(Errors.Count > 0)
                 {
                     return true;
@@ -66,57 +64,25 @@ namespace CR.Util
             {
                 //may throw here
                 Errors.Add("issue testing for CRBuild " + ex.Message);
-                return false;
+                return true;
             }
         }
        
-        /// <summary>
-        /// getFiles returns a generic list of file paths
-        /// </summary>
-        /// <param name="path"></param>
-        /// <returns>List</returns>
-        public List<string> GetFiles(string path)
-        {
-            
-
-            try
-            {
-                foreach (string f in Directory.GetFiles(path))
-                {
-                    files.Add(f);
-                }
-                foreach (string d in Directory.GetDirectories(path))
-                {
-                    GetFiles(d);
-                }
-            }
-            catch (Exception ex)
-            {
-                //throw new UtilException(ex.Message);
-                Errors.Add("issue enumerating file " + path + " " + ex.Message);
-            }
-
-            return files;
-        }
-
+      
         /// <summary>
         /// GetMD5Hash computes an MD5Hash for the specified file path if an exception
         /// is encountered during the operation the exception message
-        ///  is returned instead of the hash
+        ///  is returned instead of the hash.  This call is needed to account for errors
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
-        public string GetMD5Hash(string path)
+        private string GetMD5Hash(string path)
         {
-            StringBuilder sb = new StringBuilder();
+            //StringBuilder sb = new StringBuilder();
             try
             {
-                MD5 md5 = MD5.Create();
-                using (FileStream fs = File.Open(path, FileMode.Open))
-                {
-                    foreach (byte b in md5.ComputeHash(fs))
-                        sb.Append(b.ToString("x2").ToLower());
-                }
+                             
+                return FileUtil.GetMD5Hash(path);
             }
             catch (Exception ex)
             {
@@ -125,24 +91,9 @@ namespace CR.Util
                 return "Exception: " + ex.Message;
                 
             }
-            return sb.ToString(); ;
-        }
-
-        public void GetFileExtensions(string dir)
-        {
-            try
-            {
-                foreach(var f in GetFiles(dir))
-                {
-                    FileInfo fi = new FileInfo(f);
-                    fileExtensions.Add(fi.Extension);
-                }
-            }
-            catch (Exception ex)
-            {
-                Errors.Add("issue getting extension " + ex.Message);
-            }
            
         }
+
+     
     }
 }
