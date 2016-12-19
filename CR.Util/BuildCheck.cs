@@ -78,7 +78,7 @@ namespace CR.Util
         /// <returns></returns>
         private string GetMD5Hash(string path)
         {
-            //StringBuilder sb = new StringBuilder();
+           
             try
             {
                              
