@@ -44,7 +44,9 @@
     <Compile Include="CRScanner.cs" />
     <Compile Include="CRTemplate.cs" />
     <Compile Include="CRVul.cs" />
+    <Compile Include="Exceptions\CRServicesException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CRObjSerializer.cs" />
     <Compile Include="Services\CRScanEngine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
