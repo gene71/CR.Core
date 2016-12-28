@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuildCheck.cs" />
+    <Compile Include="CRLogger.cs" />
+    <Compile Include="Exceptions\CRUtilException.cs" />
     <Compile Include="Exceptions\FileUtilException.cs" />
     <Compile Include="FileUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
