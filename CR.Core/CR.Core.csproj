@@ -41,10 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CRFile.cs" />
+    <Compile Include="CRIndicator.cs" />
     <Compile Include="CRScanner.cs" />
     <Compile Include="CRTemplate.cs" />
     <Compile Include="CRVul.cs" />
     <Compile Include="Exceptions\CRServicesException.cs" />
+    <Compile Include="Services\ICRISE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CRObjSerializer.cs" />
     <Compile Include="Services\CRScanEngine.cs" />
