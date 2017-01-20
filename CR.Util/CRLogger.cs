@@ -12,7 +12,7 @@ namespace CR.Util
     {
 
         public enum CRLogTitle { Info, Error, Status };
-        private string logDir = "CodeReconLog.txt";
+        private string logDir = "CRLog.txt";
         /// <summary>
         /// WriteLog writes the specified  title and message to the logging directory. 
         /// If a logging directory has not been set it writes to the default path.
