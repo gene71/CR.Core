@@ -74,21 +74,21 @@ namespace CR.Core.Services
             }
         }
 
-        //public CRProject LoadCRProject(string filepath)
-        //{
-        //    try
-        //    {
-        //        using (FileStream fs = new FileStream(filepath, FileMode.Open)) //double check that...
-        //        {
-        //            XmlSerializer _xSer = new XmlSerializer(typeof(CRProject));
+        public CRProject LoadCRProject(string filepath)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream(filepath, FileMode.Open)) //double check that...
+                {
+                    XmlSerializer _xSer = new XmlSerializer(typeof(CRProject));
 
-        //            return (CRProject)_xSer.Deserialize(fs);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new CRServicesException("error deserializing CRProject..." + ex.Message);
-        //    }
-        //}
+                    return (CRProject)_xSer.Deserialize(fs);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new CRServicesException("error deserializing CRProject..." + ex.Message);
+            }
+        }
     }
 }

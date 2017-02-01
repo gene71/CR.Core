@@ -13,6 +13,7 @@ namespace CR.Core
         public string CRVID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public bool Indicator { get; set; }
         public List<string> Patterns { get; set; }
         public List<string> FileExtensions { get; set; }
         public CRScanner()

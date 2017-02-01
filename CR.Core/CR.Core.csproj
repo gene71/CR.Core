@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CRFile.cs" />
     <Compile Include="CRIndicator.cs" />
+    <Compile Include="CRProject.cs" />
     <Compile Include="CRScanner.cs" />
     <Compile Include="CRTemplate.cs" />
     <Compile Include="CRVul.cs" />
