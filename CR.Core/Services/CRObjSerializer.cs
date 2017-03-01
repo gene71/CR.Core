@@ -90,5 +90,22 @@ namespace CR.Core.Services
                 throw new CRServicesException("error deserializing CRProject..." + ex.Message);
             }
         }
+
+        public CHECKLIST LoadSTIGCKL(string filepath)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream(filepath, FileMode.Open)) //double check that...
+                {
+                    XmlSerializer _xSer = new XmlSerializer(typeof(CHECKLIST));
+
+                    return (CHECKLIST)_xSer.Deserialize(fs);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new CRServicesException("error deserializing CRProject..." + ex.Message);
+            }
+        }
     }
 }

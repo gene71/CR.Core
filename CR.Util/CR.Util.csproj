@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CHECKLIST.cs" />
     <Compile Include="BuildCheck.cs" />
     <Compile Include="CRLogger.cs" />
     <Compile Include="Exceptions\CRUtilException.cs" />

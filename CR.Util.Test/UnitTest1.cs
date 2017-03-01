@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CR.Core.Services;
 
 namespace CR.Util.Test
 {
@@ -22,6 +23,32 @@ namespace CR.Util.Test
 
 
 
+        }
+
+        [TestMethod]
+        public void TestSTIGCL()
+        {
+            try
+            {
+                CRObjSerializer cros = new CRObjSerializer();
+                CHECKLIST ckl = cros.LoadSTIGCKL(@"C:\TEMP\ckl_testSave.xml");
+                foreach (var vuln in ckl.STIGS.iSTIG.VULN)
+                {
+                    if (vuln.STIG_DATA[0].ATTRIBUTE_DATA == "V-70149")
+                    {
+                        //vuln.FINDING_DETAILS = "finding test test";
+                        //Console.WriteLine(vuln.COMMENTS.ToString());
+                        Console.WriteLine(vuln.FINDING_DETAILS.ToString());
+                        vuln.STATUS = "Open";
+                    }
+                }
+
+                cros.SaveCRObj(@"C:\TEMP\ckl_testSave.ckl", ckl);
+            }
+            catch (Exception ex)
+            {
+                throw new AssertFailedException(ex.Message);
+            }
         }
     }
 }

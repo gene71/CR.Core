@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76323435-3B7A-496B-ACF1-32217DE1E899}</ProjectGuid>
+    <ProjectGuid>{11F537B5-1B34-468A-98E7-B899FC55359D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CR.Util.Test</RootNamespace>
-    <AssemblyName>CR.Util.Test</AssemblyName>
+    <RootNamespace>CR.Core.Scanners.Test</RootNamespace>
+    <AssemblyName>CR.Core.Scanners.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CR.Core">
-      <HintPath>..\CR.Core\bin\Debug\CR.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -48,15 +45,21 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SN17001Test.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CR.Core\CR.Core.csproj">
+      <Project>{471c9720-f10f-444b-8bbd-aafce1d93d7c}</Project>
+      <Name>CR.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CR.Util\CR.Util.csproj">
       <Project>{9e6ada27-8f43-452c-ade2-ed4078ec3862}</Project>
       <Name>CR.Util</Name>

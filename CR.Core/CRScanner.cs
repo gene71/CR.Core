@@ -9,11 +9,18 @@ namespace CR.Core
     [Serializable]
     public class CRScanner
     {
-
+        /// <summary>
+        /// CRVID is not used at this time
+        /// </summary>
         public string CRVID { get; set; }
+        public string CRID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public bool Indicator { get; set; }
+        /// <summary>
+        /// Positive indicates a vulnerability was detected if there are
+        /// scan results (matches)
+        /// </summary>
+        public bool Positive { get; set; }
         public List<string> Patterns { get; set; }
         public List<string> FileExtensions { get; set; }
         public CRScanner()

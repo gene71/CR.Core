@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CR.Core.Services
 {
-    public interface CRScanEngine
+    public interface ICRIAE
     {
-        List<CRVul> GetVuls(string dirPath, CRScanner scanner); 
-        
+        CRVData GetCRVData(List<CRIndicator> indicators, CRScanner crscanner);
     }
 }
