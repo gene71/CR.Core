@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.Util", "CR.Util\CR.Util.csproj", "{9E6ADA27-8F43-452C-ADE2-ED4078EC3862}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.Util.Test", "CR.Util.Test\CR.Util.Test.csproj", "{76323435-3B7A-496B-ACF1-32217DE1E899}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.Core", "CR.Core\CR.Core.csproj", "{471C9720-F10F-444B-8BBD-AAFCE1D93D7C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.Core.Scanners.Test", "CR.Core.Scanners.Test\CR.Core.Scanners.Test.csproj", "{11F537B5-1B34-468A-98E7-B899FC55359D}"
@@ -17,14 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E6ADA27-8F43-452C-ADE2-ED4078EC3862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E6ADA27-8F43-452C-ADE2-ED4078EC3862}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E6ADA27-8F43-452C-ADE2-ED4078EC3862}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E6ADA27-8F43-452C-ADE2-ED4078EC3862}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76323435-3B7A-496B-ACF1-32217DE1E899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76323435-3B7A-496B-ACF1-32217DE1E899}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76323435-3B7A-496B-ACF1-32217DE1E899}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76323435-3B7A-496B-ACF1-32217DE1E899}.Release|Any CPU.Build.0 = Release|Any CPU
 		{471C9720-F10F-444B-8BBD-AAFCE1D93D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{471C9720-F10F-444B-8BBD-AAFCE1D93D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471C9720-F10F-444B-8BBD-AAFCE1D93D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU

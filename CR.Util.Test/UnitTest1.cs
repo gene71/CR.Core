@@ -50,5 +50,21 @@ namespace CR.Util.Test
                 throw new AssertFailedException(ex.Message);
             }
         }
+
+        [TestMethod]
+        public void TestAppDirBuilder()
+        {
+            try
+            {
+                //AppDirectoryBuilder.BuildAppDirectory();
+            }
+            catch (Exception ex)
+            {
+                throw new AssertFailedException(ex.Message);
+            }
+            
+        }
+
+
     }
 }

@@ -52,6 +52,7 @@
     <Compile Include="CRVData.cs" />
     <Compile Include="CRVul.cs" />
     <Compile Include="Exceptions\CRServicesException.cs" />
+    <Compile Include="Exceptions\CRUtilException.cs" />
     <Compile Include="Scanners\SN17001\SN17001AnalyzerScan.cs" />
     <Compile Include="Scanners\SN17001\SN171001main.cs" />
     <Compile Include="Scanners\SN17001\SN171001IndicatorScan.cs" />
@@ -61,12 +62,10 @@
     <Compile Include="Services\CRObjSerializer.cs" />
     <Compile Include="Services\CRScanEngine.cs" />
     <Compile Include="Services\ICRScanner.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CR.Util\CR.Util.csproj">
-      <Project>{9e6ada27-8f43-452c-ade2-ed4078ec3862}</Project>
-      <Name>CR.Util</Name>
-    </ProjectReference>
+    <Compile Include="Util\AppDirectoryUtil.cs" />
+    <Compile Include="Util\CHECKLIST.cs" />
+    <Compile Include="Util\CRLogger.cs" />
+    <Compile Include="Util\FileUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

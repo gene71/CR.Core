@@ -60,10 +60,6 @@
       <Project>{471c9720-f10f-444b-8bbd-aafce1d93d7c}</Project>
       <Name>CR.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CR.Util\CR.Util.csproj">
-      <Project>{9e6ada27-8f43-452c-ade2-ed4078ec3862}</Project>
-      <Name>CR.Util</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

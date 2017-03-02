@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CR.Core.Exceptions
+namespace CR.Util.Exceptions
 {
     public class CRUtilException : Exception
     {
